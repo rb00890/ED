@@ -1,0 +1,100 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaf0f8;
+}
+
+.upload-container {
+  min-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #1e06f7;
+  border-radius: 10px;
+  background-color: #f1f3f5;
+  box-shadow: 0 0 10px rgba(69, 22, 145, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.file-input-container,
+.Client-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.file-input-container label,
+.Client-container label {
+  font-size: 16px;
+  width: 120px;
+}
+
+.file-input-container input[type="file"],
+.Client-container input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #cfccfc;
+}
+
+.submit-button {
+  padding: 7px 14px;
+  background-color: #cfccfc;
+  color: black;
+  border: 1px solid #1e06f7;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.submit-button:hover {
+  background-color: #5331eb;
+  color: white;
+}
+
+.cancel-button {
+  padding: 7px 14px;
+  background-color: #f9f9f9;
+  color: black;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.cancel-button:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}

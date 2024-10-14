@@ -1,0 +1,275 @@
+body {
+  background-color: #f8f8ff;
+  /* Light background */
+  color: #383838;
+  /* Main text color */
+  font-family: "Futura", sans-serif;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Dashboard Tabs */
+.dashboard-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dashboard-tab {
+  padding: 10px 20px;
+  background-color: #531db4;
+  /* Primary Color */
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-tab.active-tab {
+  background-color: #8d64ff;
+  /* Accent Color */
+}
+
+.dashboard-tab .close-btn {
+  margin-left: 10px;
+  color: #f87171;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dashboard-tab .close-btn {
+  visibility: hidden;
+}
+
+.dashboard-tab:hover .close-btn {
+  visibility: visible;
+}
+
+/* Dashboard Styling */
+.dashboard {
+  border: 1px solid #531db4;
+  /* Border with primary color */
+  padding: 20px;
+  background-color: #e8e8ff;
+  /* Light background */
+  position: relative;
+  border-radius: 8px;
+  display: none;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.chart-wrapper {
+  background-color: #ffffff;
+  /* White for clarity */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* New Dashboard Button */
+.new-dashboard-btn {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background-color: #531db4;
+  /* Primary color */
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.new-dashboard-btn:hover {
+  background-color: #8d64ff;
+  /* Hover state */
+}
+
+/* Export Button */
+.export-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #531db4;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.export-btn:hover {
+  background-color: #8d64ff;
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+  background-color: #531db4;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background-color: #8d64ff;
+}
+
+/* Popup Styles */
+.popup {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Darken background */
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popup-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  color: #000000;
+  /* Primary color */
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-btn {
+  background-color: #f87171;
+  /* Red for cancel */
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #ef4444;
+}
+
+.display-btn {
+  background-color: #531db4;
+  /* Primary blue color */
+  color: white;
+}
+
+.display-btn:hover {
+  background-color: #8d64ff;
+}
+
+/* Export Popup */
+.export-popup {
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.export-popup-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.export-popup-content h3 {
+  margin-bottom: 20px;
+}
+
+.export-popup-btn {
+  background-color: #531db4;
+  /* Primary blue color */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.export-popup-btn:hover {
+  background-color: #8d64ff;
+}
+
+.generated-charts {
+  height: 100vh;
+  /* Full height of the viewport */
+  width: 100vw;
+  /* Full width of the viewport */
+  overflow: auto;
+  /* Allow scrolling if content overflows */
+  /* Add any other styles you need */
+}
